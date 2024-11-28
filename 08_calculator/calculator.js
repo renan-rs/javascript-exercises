@@ -6,8 +6,11 @@ const subtract = function(num1, num2) {
 	return num1 - num2;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+	let result = arr.reduce((total, curr) => {
+    return total += curr;
+  }, 0)
+  return result;
 };
 
 const multiply = function() {

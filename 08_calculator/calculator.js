@@ -13,12 +13,15 @@ const sum = function(arr) {
   return result;
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+  let result = arr.reduce((total, curr) => {
+    return total *= curr;
+  })
+  return result;
 };
 
-const power = function() {
-	
+const power = function(num1, num2) {
+  return num1 ** num2;
 };
 
 const factorial = function() {
